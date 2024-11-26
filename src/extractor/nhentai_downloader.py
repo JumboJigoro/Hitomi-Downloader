@@ -95,7 +95,7 @@ def get_info(id, session):
     formats = []
     for img in gal['images']['pages']:
         type = img['t']
-        format = {'j':'jpg', 'p':'png', 'g':'gif'}[type]
+        format = {'j':'jpg', 'p':'png', 'g':'gif', 'w':'webp'}[type]
         formats.append(format)
     info = Info(host, id, id_media, title, p, artists, groups, seriess, lang, type_, formats)
     return info
